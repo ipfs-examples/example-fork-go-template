@@ -10,6 +10,8 @@
     <b>TODO:</b> <i>Example Description</i>
     <br />
     <br />
+    <img src="https://raw.githubusercontent.com/jlord/forkngo/gh-pages/badges/cobalt.png" width="200">
+    <br>
     <a href="https://github.com/ipfs/js-ipfs/tree/master/docs">Explore the docs</a>
     ·
     <a href="https://codesandbox.io/">View Demo</a>
