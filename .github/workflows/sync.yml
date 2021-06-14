@@ -12,9 +12,9 @@ jobs:
       - name: Pull from another repository
         uses: ipfs-examples/actions-pull-directory-from-repo@main
         with:
-          destination-repo: 'ipfs-examples/examples-source'
-          destination-folder-path: 'examples/example2'
-          destination-branch: 'main'
+          destination-repo: ''
+          destination-folder-path: ''
+          destination-branch: 'master'
           source-branch: 'main'
           git-username: github-actions
           git-email: github-actions@github.com
