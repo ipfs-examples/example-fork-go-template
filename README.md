@@ -2,13 +2,15 @@
 
 This project is a template to be used to pull a given example from a folder/directory of another repository.
 
-### Prerequisites
+### Requirements
 
-Check if exists a github action to perform the pull from another repository.
+- Add descriptions to the example (mandatory)
+- Check if the github action to perform the pull from another repository exists.
+- Turn off issue/wikis/projects/discussions 
+- Disable Releases/Environments/Packages
+- Change the github action workflow, `sync` accordingly to your needs
 
 ### Installation
-
-Change the github action workflow, `sync` accordingly to your needs:
 
 ``` yaml
 - name: Pull from another repository
@@ -24,7 +26,7 @@ Change the github action workflow, `sync` accordingly to your needs:
 
 _For more information, please refer to the [Documentation](https://github.com/ipfs-examples/actions-pull-directory-from-repo)_
 
-## Usage
+## Usage/Examples
 
 This repository will sync automatically based on the timer of the workflow, you can trigger manually:
 
