@@ -12,8 +12,8 @@ jobs:
       - name: Pull from another repository
         uses: ipfs-examples/actions-pull-directory-from-repo@main
         with:
-          destination-repo: ''
-          destination-folder-path: ''
+          destination-repo: 'ipfs/js-ipfs'
+          destination-folder-path: 'examples/EXAMPLE_NAME'
           destination-branch: 'master'
           source-branch: 'main'
           git-username: github-actions
