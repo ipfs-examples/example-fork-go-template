@@ -6,20 +6,20 @@ This project is a template to be used to pull a given example from a folder/dire
 
 - Add descriptions to the example (mandatory)
 - Check if the github action to perform the pull from another repository exists.
-- Turn off issue/wikis/projects/discussions 
+- Turn off issue/wikis/projects/discussions
 - Disable Releases/Environments/Packages
 - Change the github action workflow, `sync` accordingly to your needs
 
 ### Installation
 
-``` yaml
+```yaml
 - name: Pull from another repository
   uses: ipfs-examples/actions-pull-directory-from-repo@main
   with:
-    destination-repo: # mandatory, ex: 'ipfs-examples/examples-source'
-    destination-folder-path: # mandatory, ex: 'examples/example2'
-    destination-branch: # optional, can be omitted, defaults to: 'main'
+    source-repo: # mandatory, ex: 'ipfs-examples/js-ipfs-examples'
+    source-folder-path: # mandatory, ex: 'examples/your-example'
     source-branch: # optional, can be omitted, defaults to: 'main'
+    target-branch: # optional, can be omitted, defaults to: 'main'
     git-username: # optional, can be omitted, defaults to: 'github-actions'
     git-email: # optional, can be omitted, defaults to: 'github-actions@github.com'
 ```

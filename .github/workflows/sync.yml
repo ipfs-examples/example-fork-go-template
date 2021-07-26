@@ -2,7 +2,7 @@ name: Sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
 
 jobs:
   sync:
@@ -12,9 +12,9 @@ jobs:
       - name: Pull from another repository
         uses: ipfs-examples/actions-pull-directory-from-repo@main
         with:
-          destination-repo: 'ipfs/js-ipfs'
-          destination-folder-path: 'examples/EXAMPLE_NAME'
-          destination-branch: 'master'
-          source-branch: 'main'
+          source-repo: "ipfs-examples/js-ipfs-examples"
+          source-folder-path: "examples/EXAMPLE_NAME"
+          source-branch: "master"
+          target-branch: "main"
           git-username: github-actions
           git-email: github-actions@github.com
